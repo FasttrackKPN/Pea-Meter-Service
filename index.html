@@ -829,7 +829,7 @@
         // ================= 1. Config & State =================
         // ================= API หลังบ้าน (Google Apps Script Web App) =================
         // ⬇️⬇️⬇️  วาง URL /exec ที่ได้จากการ Deploy Apps Script (Web app) ลงตรงนี้  ⬇️⬇️⬇️
-        const API_BASE = 'script.google.com/macros/s/AKfycbyEpiJfVMw4yPfDN4tg4A7ZPmIQ853D5sQVnHfU8lFZ4wQCAkdTJhmRdGyJJCLAMid1Jw/exec';
+        const API_BASE = 'https://script.google.com/macros/s/AKfycbyEpiJfVMw4yPfDN4tg4A7ZPmIQ853D5sQVnHfU8lFZ4wQCAkdTJhmRdGyJJCLAMid1Jw/exec';
         // ตัวอย่าง: 'https://script.google.com/macros/s/AKfycbxxxxxxxxxxxxxxxx/exec'
         // IS_GAS: บอกว่าตั้งค่า API_BASE แล้วหรือยัง (ระบบทำงานผ่าน fetch เสมอเมื่อตั้งค่าแล้ว)
         const IS_GAS = (typeof API_BASE === 'string' && API_BASE.indexOf('http') === 0);
